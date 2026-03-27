@@ -59,6 +59,6 @@ def download_file(url, filename):
 
 
 download_file(
-"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNNFJEWcPxvOt6YVL9UayiO1C2llqs5DnqEQ&s",
+"https://www.intelliamiet.in/trikon/trikon2026/logo.png",
 "background1.jpg"
 )
