@@ -9,3 +9,15 @@ for i in range(lower, upper+1):
             break
     else:
         print(i)
+
+# continue statement
+
+for i in range(1,10):
+    if i == 5:
+        continue
+    print(i)
+
+#pass statement
+
+for i in range(1,10):
+    pass
