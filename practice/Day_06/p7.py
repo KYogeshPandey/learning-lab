@@ -1,0 +1,1 @@
+#write a program which can remove a particular charachter from a string

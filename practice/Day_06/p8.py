@@ -1,0 +1,1 @@
+# write a program that can check whether a given string is palindrome or not
