@@ -73,4 +73,16 @@ print(d)
 # clear
 d.clear()
 print(d)
- 
+
+print(s['subjects']['python'])
+s['subjects']['dsa'] = 93
+print(s) 
+
+
+del s['subjects']['java']
+print(s)
+
+# editing key value pair
+
+s['subjects']['python'] = 95
+print(s)
