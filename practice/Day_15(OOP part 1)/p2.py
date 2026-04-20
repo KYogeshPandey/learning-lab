@@ -2,12 +2,29 @@
 
 class ATM :
 
+    __counter = 0
+
     # Constructor(special->function) -> super power
     def __init__(self):
         self.pin = ''
         self.__balance = 0
-        self.menu()
-        print('main to execute ho gya')
+        self.cid = ATM.__counter
+        ATM.__counter = ATM.__counter + 1          
+        # self.menu()
+
+    # Utility methods 
+    @staticmethod             # to create utility methods
+    def get_count():
+        return ATM.__counter
+
+    def get_balance(self):
+        return self.__balance
+
+    def set_balance(self,new_value):
+        if type(new_value) == int:
+            self.__balance = new_value
+        else:
+            print('not possible')
 
     def menu (self):
         user_input = input("""
@@ -75,4 +92,16 @@ class ATM :
         self.menu() 
 
 obj = ATM()
+obj.get_balance()
+obj.set_balance(100000)
+
+c1 = ATM()
+c2 = ATM()
+c3 = ATM()
+
+print(ATM.get_count())
+
+print(c1.cid)
+print(c2.cid)
+print(c3.cid)
 # print(type(obj))
