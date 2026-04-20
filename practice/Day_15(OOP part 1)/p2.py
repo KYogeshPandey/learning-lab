@@ -5,7 +5,7 @@ class ATM :
     # Constructor(special->function) -> super power
     def __init__(self):
         self.pin = ''
-        self.balance = 0
+        self.__balance = 0
         self.menu()
         print('main to execute ho gya')
 
@@ -35,7 +35,7 @@ class ATM :
         self.pin = user_pin
 
         user_balance = int(input('enter the balance'))
-        self.balance = user_balance 
+        self.__balance = user_balance 
 
         print('pin created successfully')
         self.menu()
@@ -56,7 +56,7 @@ class ATM :
     def check_balance(self):
         user_pin = input('enter the pin :')
         if user_pin == self.pin :
-            print('your balance is : ', self.balance)
+            print('your balance is : ', self.__balance)
         else:
             print('wrong pin')
         self.menu()
@@ -65,9 +65,9 @@ class ATM :
         user_pin = input('enter the pin :')
         if user_pin == self.pin:
             amount = int(input('enter the amount to withdraw :'))
-            if amount <= self.balance:
-                self.balance = self.balance-amount
-                print('withdrawl successfully remaining balance is :', self.balance)
+            if amount <= self.__balance:
+                self.__balance = self.__balance-amount
+                print('withdrawl successfully remaining balance is :', self.__balance)
             else:
                 print('insufficient balance')
         else:
