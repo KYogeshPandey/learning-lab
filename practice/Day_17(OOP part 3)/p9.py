@@ -1,5 +1,8 @@
 # super -> constructor
 
+# cant use outside the class
+# you cant to accesss the attributes
+
 class Phone:
     def __init__(self, price, brand, camera):
         print('Inside the constructor')
