@@ -15,7 +15,7 @@ except:
 try:
     f = open('file2.txt','r')
     print(f.read())
-    print(m)
+    # print(m)
     print(5/2)
     l = [1,2,3]
     l[100]
