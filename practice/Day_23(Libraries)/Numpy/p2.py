@@ -43,38 +43,56 @@ a3 = np.arange(8).reshape(2,2,2)
 
 # print(a3.astype(np.int32))
 
-# array operations
+# # array operations
 
-a4 = np.arange(1,13,dtype = int).reshape(3,4)
-a5 = np.arange(12,24,dtype=int).reshape(3,4)
+# a4 = np.arange(1,13,dtype = int).reshape(3,4)
+# a5 = np.arange(12,24,dtype=int).reshape(3,4)
 
-# scalar operations
+# # scalar operations
 
-print(a4)
-print(a4*2)
-print(a4+2)
+# print(a4)
+# print(a4*2)
+# print(a4+2)
 
-print(a4>7)
-print(a5>=15)
-print(a5 == 20)
+# print(a4>7)
+# print(a5>=15)
+# print(a5 == 20)
 
-# vector operstions
+# # vector operstions
 
-print(a4 + a5)
-print(a4-a5)
-print(a4/a5)
-print(a4%a5)
+# print(a4 + a5)
+# print(a4-a5)
+# print(a4/a5)
+# print(a4%a5)
 
 # Array Functions
 
-a1 = np.random.random((3,3))
-a1 = np.round(a1 * 100)
+a1 = np.arange(12).reshape(3,4)
+# a1 = np.round(a1 * 100)
 
-print(np.max(a1))
-print(np.min(a1))
-print(np.sum(a1))
-print(np.min(a1,axis=0))
-print(np.prod(a1, axis = 0))
+# print(np.max(a1))
+# print(np.min(a1))
+# print(np.sum(a1))
+# print(np.min(a1,axis=0))
+# print(np.prod(a1, axis = 0))
 
+print(a1)
 
+print(np.mean(a1))
+print(np.median(a1))
+print(np.std(a1,axis =0))
+print(np.var(a1,axis = 1))
 
+print(np.sin(a1))
+
+a2 = np.arange(12).reshape(3,4)
+a3 = np.arange(12,24).reshape(4,3)
+
+print(np.dot(a2,a3))
+
+print(np.log(a1))
+print(np.exp(a1))
+
+print(np.round(np.random.random((3,4))*100))
+print(np.floor(np.random.random((3,4))*100))
+print(np.ceil(a2))
