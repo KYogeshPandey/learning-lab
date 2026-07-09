@@ -85,3 +85,58 @@ marks_series[0] = 100
 print(marks_series)
 
 # What if index does not exist in series
+marks_series['Sst'] = 90
+print(marks_series)
+
+# Slicing and Editing
+marks_series[1:3] = [200,300]
+print(marks_series)
+
+# using index label
+movies['2 States'] = "Alia Bhatt"
+print(movies)
+
+# Series with python functonalities
+
+# len/type/dir/sorted/max/min
+
+print(len(subs))
+print(type(subs))
+print(dir(subs))
+print(sorted(subs))
+print(max(subs))
+print(min(subs))
+
+# type conversion
+print(list(subs))
+
+# membership operators
+
+print('2 States' in movies)
+print('Alia Bhatt' in movies.values)
+
+# Looping
+for i in movies.index:
+    print(i)
+
+# Relational Operators
+print(kohli >= 50)
+
+# Boolean Indexing In series
+# Find no of 100's and 50's scored by kohli in ipl
+print(kohli[kohli >= 50].size)
+print(kohli[kohli >= 100].size)
+print(kohli[kohli == 0].size)
+print(subs[subs > 200].size)
+
+# Find actors who had worked in miore than 20 films in last year
+
+num_movies = movies.value_counts()
+print(num_movies[num_movies > 20])
+
+# Plotting graph
+import matplotlib.pyplot as plt
+subs.plot()
+# plt.show()
+movies.value_counts().head(20).plot(kind='pie')
+# plt.show()
