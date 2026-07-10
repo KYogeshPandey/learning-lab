@@ -140,3 +140,66 @@ subs.plot()
 # plt.show()
 movies.value_counts().head(20).plot(kind='pie')
 # plt.show()
+
+
+
+# Some other functions of Pandas Series
+
+# astype
+import sys 
+print(sys.getsizeof(kohli))
+
+# Between
+print(kohli[kohli.between(51,99)].size)
+
+# clip
+
+print(subs.clip(100,200))
+
+# drop_duplicates
+temp = pd.Series([1,1,2,1,4,2,5,3,4,5,3])
+print(temp.drop_duplicates(keep = 'last'))
+
+print(temp.duplicated().sum())
+print(kohli.duplicated().sum())
+
+# isnull
+temp = pd.Series([1,2,3,np.nan,5,np.nan,7,8,9,np.nan])
+print(temp)
+print(temp.size)
+print(temp.count())
+
+print(temp.isnull().sum())
+print(kohli.isnull().sum())
+
+
+# dropna
+print(temp.dropna())
+
+# fillna
+print(temp.fillna(temp.mean()))
+
+
+# isin
+print(kohli[(kohli == 49) | (kohli == 99)])
+print(kohli[kohli.isin([49,78,89,67])])
+
+
+# apply
+print(movies.apply(lambda x : x.split()[0].upper()))
+
+print(subs.apply(lambda x :'good day' if x > subs.mean() else 'bad day'))
+
+
+# copy
+kohli
+new = kohli.head()
+new[1] = 100
+print(new)
+print(kohli)
+
+new2 = kohli.head().copy()
+new2[1] = 200
+print(new2)
+print(new)
+print(kohli)
