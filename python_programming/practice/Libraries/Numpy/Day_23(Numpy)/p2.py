@@ -1,4 +1,4 @@
-# Array Attributes/Changing Datatype/Array operations/Array Functions
+# Array Attributes/Changing Datatype/Array operations/Array Practice.Functions
 
 import numpy as np
 
@@ -65,7 +65,7 @@ a3 = np.arange(8).reshape(2,2,2)
 # print(a4/a5)
 # print(a4%a5)
 
-# Array Functions
+# Array Practice.Functions
 
 a1 = np.arange(12).reshape(3,4)
 # a1 = np.round(a1 * 100)

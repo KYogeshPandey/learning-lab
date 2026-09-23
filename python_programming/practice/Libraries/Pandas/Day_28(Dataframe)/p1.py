@@ -143,7 +143,7 @@ print(movies)
 # movies['lead_actor'] = movies['actors'].str.split('|').apply(lambda x : x[0])
 # movies
 
-# Important DataFrame Functions
+# Important DataFrame Practice.Functions
 
 # astype
 Ipl.info()

@@ -1,4 +1,4 @@
-# Functions are 1st class citizen
+# Practice.Functions are 1st class citizen
 
 # type and id
 def square(num):

@@ -1,4 +1,4 @@
-# Functions of Numpy
+# Practice.Functions of Numpy
 
 import numpy as np
 

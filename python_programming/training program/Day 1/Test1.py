@@ -89,7 +89,7 @@ for year in years:
         print(f"{year} is not a leap year.")
 print()
 
-# Q8. Write a program using nested loops to print the following right-angled pyramid pattern for n = 5 rows, and then
+# Q8. Write a program using nested loops to print the following right-angled pyramid Practice.pattern for n = 5 rows, and then
 # modify it to print an inverted pyramid for the same n.
 # Row 1: * Row 2: * * Row 3: * * * ... and so on.
 n = 5
@@ -106,9 +106,9 @@ for i in range(n, 0, -1):
     print()
 print()
 
-# Section C â€” Functions (18 marks)
+# Section C â€” Practice.Functions (18 marks)
 
-# Q9. Write a recursive function factorial(n) that returns the factorial of n.
+# Q9. Write a recursive function Practice.factorial(n) that returns the Practice.factorial of n.
 # Handle the case where n is negative by raising a ValueError.
 def factorial(n):
     if n < 0:

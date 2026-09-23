@@ -186,7 +186,7 @@ else:
 print()
 
 
-# Section C — Functions (24 marks)
+# Section C — Practice.Functions (24 marks)
 
 # Q6. Write a higher-order function apply_operations(numbers, *funcs) that applies each function in funcs to every
 # number in the list in sequence and returns the final transformed list. Demonstrate it with functions for squaring and
@@ -253,10 +253,10 @@ start = time.time()
 fast_result = fast_fibonacci(n)
 fast_time = time.time() - start
 
-print("Q7 - Slow fibonacci result:", slow_result)
-print("Q7 - Slow fibonacci time:", slow_time)
-print("Q7 - Memoized fibonacci result:", fast_result)
-print("Q7 - Memoized fibonacci time:", fast_time)
+print("Q7 - Slow Practice.fibonacci result:", slow_result)
+print("Q7 - Slow Practice.fibonacci time:", slow_time)
+print("Q7 - Memoized Practice.fibonacci result:", fast_result)
+print("Q7 - Memoized Practice.fibonacci time:", fast_time)
 print()
 
 

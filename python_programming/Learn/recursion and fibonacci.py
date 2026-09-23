@@ -1,5 +1,5 @@
 #Recursion             (process of defining a function in terms of itself)
-#factorial =n*factorila(n-1)
+#Practice.factorial =n*factorila(n-1)
 
 def factorial(n):
     if n==0 or n==1:
@@ -11,7 +11,7 @@ print(factorial(5))
 
 
 
-#fibonacci  0,1,1,2,3,5,8,13,21,34,55
+#Practice.fibonacci  0,1,1,2,3,5,8,13,21,34,55
 
 def fibonacci(n):
     if n==0 or n==1:

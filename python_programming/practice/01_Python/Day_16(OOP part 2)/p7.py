@@ -27,7 +27,7 @@ p1 = Person('nitish','India')
 p2 = Person('steve','Australia')
 p3 = Person('mark','America')
 
-d = {'p1':p1,'p2':p2,'p3':p3}
+d = {'Practice.p1':p1,'p2':p2,'p3':p3}
 
 for i in d :
     print(d[i].name,d[i].country)
