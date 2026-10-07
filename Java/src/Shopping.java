@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
 
@@ -28,19 +29,25 @@ import java.util.Scanner;
         }
     }
 
-    class Owner {
-        String owner_name;
-        int owner_id;
+    class User {
 
-        Owner (int id, String name) {
-            this.owner_id = id;
-            this.owner_name = name;
+        String User_name;
+        int User_id;
+        String User_role;
+
+        User (int id, String name, String role) {
+            this.User_id = id;
+            this.User_name = name;
+            this.User_role = role;
         }
+
+
     }
 
     class Operations {
 
         static HashMap<Integer, Product> productHashmap = new HashMap<>();
+        static ArrayList<Product> productList = new ArrayList<>();
         static Scanner sc = new Scanner(System.in);
 
         static void Create_product() {
@@ -114,6 +121,21 @@ import java.util.Scanner;
             for (Product product : productHashmap.values()) {
                 System.out.println(product);
             }
+        }
+
+        static void Add_Product() {
+            Get_product();
+            System.out.print("Enter Product_id you want to add in Cart");
+            int id = sc.nextInt();
+
+            Product product = productHashmap.get(id);
+
+            productList.add(product);
+            System.out.println(product + "added to the cart");
+        }
+
+        static void Remove_Product() {
+
         }
 
         static void Exit() {
